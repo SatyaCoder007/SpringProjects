@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Fisrt Spring Project</title>
+</head>
+
+<body>
+<h1>Authors List</h1>
+
+<table>
+    <tr>
+        <th>Author ID</th>
+        <th>Author Name</th>
+        <th>Author City</th>
+        <th>Author State</th>
+    </tr>
+    <tr th:each="author : ${authors}">
+
+        <td th:text="${author.authorID}">123</td>
+        <td th:text="${author.authorName}">Pata Nahi</td>
+        <td th:text="${author.authorCity}">4567829</td>
+        <td th:text="${author.state}">4567829</td>
+    </tr>
+</table>
+
+</body>
+
+
+</html>

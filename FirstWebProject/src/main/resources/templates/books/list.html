@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Fisrt Spring Project</title>
+</head>
+
+<body>
+    <h1>Book List</h1>
+
+<table>
+    <tr>
+        <th>Book ID</th>
+        <th>Book Name</th>
+        <th>ISBN Number</th>
+    </tr>
+    <tr th:each="book : ${books}">
+
+        <td th:text="${book.bookID}">123</td>
+        <td th:text="${book.bookName}">Pata Nahi</td>
+        <td th:text="${book.ISBN}">4567829</td>
+    </tr>
+</table>
+
+</body>
+
+
+</html>
